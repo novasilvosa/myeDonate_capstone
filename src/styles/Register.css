@@ -1,0 +1,149 @@
+/* Ensure full height for scrolling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Enable scrolling when content overflows */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../assets/images/edonate1.jpg") center/cover no-repeat;
+    overflow: hidden; /* Prevents full-page scrolling */
+}
+
+.register-box {
+    max-height: 80vh; /* Sets a fixed height */
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow-y: auto; /* Enables vertical scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #1c7d32 transparent; /* Green scrollbar */
+}
+
+.register-box::-webkit-scrollbar {
+    width: 6px; /* Thin scrollbar */
+}
+
+.register-box::-webkit-scrollbar-thumb {
+    background: #1c7d32; /* Green scrollbar */
+    border-radius: 10px;
+}
+
+.register-box::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+
+/* Logo size */
+.register-logo {
+    width: 100px;
+}
+
+h2 {
+    color: #1c7d32;
+}
+
+p {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+/* Signup button */
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background: #1c7d32;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Login link */
+.login-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #1c7d32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* OR separator */
+.or-text {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Social login buttons */
+.social-register {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.google-register,
+.facebook-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.google-register {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.facebook-register {
+    background: #1877f2;
+    color: white;
+}
+
+.google-register img,
+.facebook-register img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Scrollbar styling */
+.register-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.register-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.register-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}

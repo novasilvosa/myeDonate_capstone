@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    background-color: white;
+    height: 80px; /* Keep navbar height the same */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo-title{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c7d32;
+  }
+  
+  .logo-img {
+    width: 80px; /* Make the logo bigger */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c7d32;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .login-btn,
+  .signup-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-btn {
+    background: #e6e6e6;
+    color: #1c7d32;
+  }
+  
+  .signup-btn {
+    background: #1c7d32;
+    color: white;
+  }
+  

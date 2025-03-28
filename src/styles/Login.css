@@ -1,0 +1,128 @@
+/* Ensure full height and allow scrolling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Enable scrolling when content overflows */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Allows scrolling when needed */
+    background: url("../assets/images/edonate1.jpg") center/cover no-repeat;
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Scrollable content box */
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    max-height: 80vh; /* Fixes height */
+    overflow-y: auto; /* Enables vertical scrolling inside */
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+/* Style scrollbar inside the login box */
+.login-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.login-box::-webkit-scrollbar-thumb {
+    background-color: #1c7d32; /* Green scrollbar */
+    border-radius: 10px;
+}
+
+.login-box::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Logo size */
+.login-logo {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+}
+
+h2 {
+    color: #1c7d32;
+}
+
+p {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+/* Sign-up text */
+.signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #1c7d32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* OR separator */
+.or-text {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Social login buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.google-login,
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.google-login {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.facebook-login {
+    background: #1877f2;
+    color: white;
+}
+
+.google-login img,
+.facebook-login img {
+    width: 20px;
+    margin-right: 10px;
+}
