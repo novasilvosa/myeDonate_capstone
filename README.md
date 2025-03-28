@@ -21,7 +21,7 @@
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/johnrayrafaela/eDonate_capstone.git
+   git clone https://github.com/novasilvosa/eDonate_capstone.git
    cd edonate-frontend
    ```
 2. Install dependencies:  
